@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for AKT Guardian AI by AKT Mobile LLC.">
+  <title>AKT Guardian AI Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f7fa;
+      --surface: #ffffff;
+      --text: #17202a;
+      --muted: #566573;
+      --accent: #176b57;
+      --border: #dfe6e9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0c1117;
+        --surface: #151c25;
+        --text: #e7edf4;
+        --muted: #a6b2bf;
+        --accent: #65d0ae;
+        --border: #2a3542;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: clamp(24px, 5vw, 56px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 16px 40px rgb(0 0 0 / 8%);
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; }
+    h2 { margin-top: 2rem; font-size: 1.3rem; }
+    p, li { max-width: 75ch; }
+    .effective { margin: 0 0 2rem; color: var(--muted); }
+    .summary {
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+      border-radius: 6px;
+    }
+    a { color: var(--accent); }
+    code {
+      padding: 2px 5px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow-wrap: anywhere;
+    }
+    footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AKT Guardian AI Privacy Policy</h1>
+    <p class="effective"><strong>Effective date:</strong> October 18, 2026</p>
+
+    <p class="summary">
+      AKT Guardian AI analyzes surveillance video displayed on your Windows screen.
+      Image analysis occurs locally on your device. AKT Mobile LLC does not receive
+      your surveillance images, alarm snapshots, or application settings unless you
+      separately choose to provide them to us, for example in a support request.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      AKT Guardian AI ("Guardian" or the "App") is provided by AKT Mobile LLC,
+      operating under the AKT Vision brand ("AKT," "we," "us," or "our"). This
+      policy explains how Guardian accesses, processes, stores, and transmits
+      information.
+    </p>
+
+    <h2>2. Information Guardian accesses and processes</h2>
+    <p>When monitoring is running, Guardian may access and process:</p>
+    <ul>
+      <li>Pixels visible on the monitor or VMS window selected by the user.</li>
+      <li>Surveillance imagery that may include people, faces, vehicles, property,
+          timestamps, camera labels, and other information visible in the video.</li>
+      <li>Detected event information, such as event type, confidence, camera label,
+          and event time.</li>
+      <li>Application settings, including selected monitor, VMS choice, model/core,
+          thresholds, and alarm preferences.</li>
+      <li>If Telegram notifications are enabled, the Telegram bot token and chat ID
+          supplied by the user.</li>
+    </ul>
+    <p>
+      Guardian does not require an AKT account and does not include AKT advertising,
+      behavioral tracking, or analytics telemetry in the current version.
+    </p>
+
+    <h2>3. How information is used</h2>
+    <p>The App uses this information only to:</p>
+    <ul>
+      <li>identify camera regions shown by the selected VMS or screen;</li>
+      <li>detect configured surveillance events;</li>
+      <li>show alarms and notification counts;</li>
+      <li>save alarm evidence locally; and</li>
+      <li>send optional notifications requested by the user.</li>
+    </ul>
+
+    <h2>4. Local processing and storage</h2>
+    <p>
+      AI inference is performed locally on the Windows device. Guardian does not
+      upload screen or surveillance imagery to AKT servers for inference. Settings
+      and alarm snapshots are stored under the current Windows user's local
+      application-data directory, normally:
+    </p>
+    <p><code>%LOCALAPPDATA%\AKT Vision\Guardian AI</code></p>
+    <p>
+      Alarm files remain on the device until the user deletes them. Users can delete
+      stored alarm images and application settings through Windows File Explorer.
+      Uninstalling the App may not automatically remove files in this local data
+      directory.
+    </p>
+
+    <h2>5. Optional Telegram notifications</h2>
+    <p>
+      Telegram integration is disabled by default. If the user enables it and
+      supplies Telegram credentials, Guardian communicates directly with
+      <code>api.telegram.org</code>. Depending on the event, it may transmit the
+      Telegram bot token, chat ID, status or alarm text, and alarm images. AKT does
+      not receive those transmissions.
+    </p>
+    <p>
+      Telegram independently processes information under its own terms and privacy
+      policy, potentially in other countries. Users control this sharing and can
+      stop it at any time by disabling Telegram notifications and removing the bot
+      token and chat ID in Guardian. Users may also delete messages using Telegram's
+      available controls. See the
+      <a href="https://telegram.org/privacy" rel="noopener noreferrer">Telegram Privacy Policy</a>.
+    </p>
+
+    <h2>6. Information shared with AKT</h2>
+    <p>
+      Guardian does not automatically send personal information, surveillance
+      footage, alarm evidence, or settings to AKT. We receive information only when
+      a user voluntarily contacts us or provides files for support, diagnostics,
+      model training, or another requested service. We use such information to
+      answer the request and provide the agreed service. Terms for a separate custom
+      model-training engagement may be documented in an additional agreement.
+    </p>
+    <p>We do not sell personal information obtained through Guardian.</p>
+
+    <h2>7. Security</h2>
+    <p>
+      Guardian keeps its primary processing and evidence storage on the user's
+      device. Access to local data depends on the security of the Windows account,
+      device, VMS, Telegram account, and network. Users should protect their device,
+      restrict access to the local data directory, keep software updated, and keep
+      Telegram credentials confidential. No storage or transmission method can be
+      guaranteed to be completely secure.
+    </p>
+
+    <h2>8. User choices and data access</h2>
+    <p>Users can:</p>
+    <ul>
+      <li>start or stop monitoring at any time;</li>
+      <li>choose which monitor, VMS, event types, and notification options to use;</li>
+      <li>leave Telegram disabled or remove its credentials;</li>
+      <li>view or delete locally stored settings and alarm evidence; and</li>
+      <li>contact AKT about information voluntarily provided to us.</li>
+    </ul>
+
+    <h2>9. Surveillance operator responsibilities</h2>
+    <p>
+      The person or organization operating Guardian determines which surveillance
+      video is monitored and is responsible for having a lawful basis, providing
+      required notices, controlling access, establishing retention periods, and
+      complying with applicable surveillance, employment, biometric, and data
+      protection laws. Guardian should not be used where monitoring or recording is
+      prohibited.
+    </p>
+
+    <h2>10. Children's privacy</h2>
+    <p>
+      Guardian is a surveillance and safety tool intended for use by adults and
+      organizations. It is not directed to children and does not knowingly request
+      personal information directly from children. Surveillance operators remain
+      responsible for legal requirements relating to images of minors.
+    </p>
+
+    <h2>11. Third-party distribution and policy hosting</h2>
+    <p>
+      Microsoft may process information associated with Store downloads and usage
+      under the Microsoft Privacy Statement. If this policy is hosted using GitHub
+      Pages, GitHub may process technical request information under its own privacy
+      statement. These services operate independently of AKT.
+    </p>
+    <ul>
+      <li><a href="https://privacy.microsoft.com/privacystatement" rel="noopener noreferrer">Microsoft Privacy Statement</a></li>
+      <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub General Privacy Statement</a></li>
+    </ul>
+
+    <h2>12. Changes to this policy</h2>
+    <p>
+      We may update this policy when Guardian's features or legal requirements
+      change. We will publish the revised policy at this URL and update the effective
+      date above. Material changes will be described through an appropriate product
+      or Store notice when required.
+    </p>
+
+    <h2>13. Contact us</h2>
+    <p>
+      For privacy questions or requests, contact:<br>
+      <strong>AKT Mobile LLC (AKT Vision)</strong><br>
+      South Korea<br>
+      Email: <a href="mailto:contact@aktvision.co.kr">contact@aktvision.co.kr</a><br>
+      Website: <a href="https://aktvision.co.kr" rel="noopener noreferrer">https://aktvision.co.kr</a>
+    </p>
+
+    <footer>© 2026 AKT Mobile LLC. All rights reserved.</footer>
+  </main>
+</body>
+</html>
